@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
+namespace Domain;
     public class TodoDb : DbContext
     {
         public TodoDb(DbContextOptions<TodoDb> options)

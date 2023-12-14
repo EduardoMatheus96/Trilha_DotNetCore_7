@@ -44,7 +44,7 @@ todoItems.MapDelete("/{id}", DeleteTodo)
 
 app.MapGet("/swag", () => "Hello Swagger!")
     .WithOpenApi();
-    
+
 app.Run();
 
 static async Task<IResult> GetAllTodos(TodoDb db)

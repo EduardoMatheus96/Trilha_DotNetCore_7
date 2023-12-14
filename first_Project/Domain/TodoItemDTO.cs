@@ -1,3 +1,4 @@
+namespace Domain;
 public class TodoItemDTO
 {
     public int Id { get; set; }
