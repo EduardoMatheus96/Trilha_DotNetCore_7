@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\techMedClean\techMedClean_EFCore.csproj" />
+    <ProjectReference Include="..\techMedClean.Domain\techMedClean.Domain.csproj" />
+    <ProjectReference Include="..\techMedClean.Persistence\techMedClean.Persistence.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\techMedClean.Domain\techMedClean.Domain.csproj" />
+    <ProjectReference Include="..\techMedClean\techMedClean_EFCore.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using techMedClean.Domain.Entities;
-using techMedClean.Domain.Interfaces;
 namespace techMedClean.Persistence.Context;
 
 public class TechMedContext : DbContext
