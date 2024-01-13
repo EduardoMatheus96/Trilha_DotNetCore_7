@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techMedClean", "techMedClea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techMedClean.Domain", "techMedClean.Domain\techMedClean.Domain.csproj", "{32FBC57D-7794-4EA5-9355-6E0CA171F00B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "techMedClean.Persistence", "techMedClean.Persistence\techMedClean.Persistence.csproj", "{5F1BD242-377D-46E4-9D95-211E29E1BDE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{32FBC57D-7794-4EA5-9355-6E0CA171F00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FBC57D-7794-4EA5-9355-6E0CA171F00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FBC57D-7794-4EA5-9355-6E0CA171F00B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1BD242-377D-46E4-9D95-211E29E1BDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1BD242-377D-46E4-9D95-211E29E1BDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1BD242-377D-46E4-9D95-211E29E1BDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1BD242-377D-46E4-9D95-211E29E1BDE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
