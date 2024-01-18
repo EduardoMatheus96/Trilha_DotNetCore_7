@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace TechMEd.WebAPI.Controllers;
 
@@ -15,13 +16,6 @@ public class  PacientesController : ControllerBase
     {
         "Ilheus", "Almadina", "Miknik", "saoJose", "Itabuna"
     };
-
-    private readonly ILogger<PacientesController> _logger;
-
-    public PacientesController(ILogger<PacientesController> logger)
-    {
-        _logger = logger;
-    }
 
     [HttpGet(Name = "GetPaciente")]
     public IEnumerable<Paciente> Get()
