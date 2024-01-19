@@ -5,7 +5,7 @@ namespace TechMed.WebAPI.Infra.Data;
 public class MedicosDB : IMedicoCollection
 {
    private readonly List<Medico> _medicos = new List<Medico>();
-   private int _id = 0;   
+   private int _id = 0;
    public void Create(Medico medico)
    {
       if(_medicos.Count > 0)
