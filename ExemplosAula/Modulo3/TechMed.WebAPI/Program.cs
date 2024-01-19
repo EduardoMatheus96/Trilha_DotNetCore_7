@@ -5,15 +5,10 @@ using TechMed.WebAPI.Model;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// builder.Services.AddSingleton<IAppCollection<Medico>, MedicosDB>();
-// builder.Services.AddSingleton<IAppCollection<Atendimento>, AtendimentoDB>();
-// builder.Services.AddSingleton<IAppCollection<Paciente>, PacientesDB>();
 builder.Services.AddSingleton<IMedicoCollection, MedicosDB>();
 builder.Services.AddSingleton<IPacienteCollection, PacientesDB>();
 builder.Services.AddSingleton<IAtendimentoCollection, AtendimentoDB>();
 builder.Services.AddSingleton<IExameCollection, ExameDB>();
-
-
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
