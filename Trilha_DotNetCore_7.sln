@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExemplosAula", "ExemplosAula", "{E18248C4-8DCC-4835-9F6F-88855579718E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulo3", "Modulo3", "{631C6EFC-D64B-49E6-8F55-238724AE1E8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.Core", "ExemplosAula\Modulo3\TechMed.Core\TechMed.Core.csproj", "{70E8E7FF-A80F-4A41-A86F-27A277C5DD65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.Infrastructure", "ExemplosAula\Modulo3\TechMed.Infrastructure\TechMed.Infrastructure.csproj", "{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechMed.WebAPI", "ExemplosAula\Modulo3\TechMed.WebAPI\TechMed.WebAPI.csproj", "{4FDC06E9-56B6-4649-AD79-189DC6864741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMed.Application", "ExemplosAula\Modulo3\TechMed.Application\TechMed.Application.csproj", "{A1699867-7A61-41CF-A715-D2947E75F967}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E8E7FF-A80F-4A41-A86F-27A277C5DD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E8E7FF-A80F-4A41-A86F-27A277C5DD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E8E7FF-A80F-4A41-A86F-27A277C5DD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E8E7FF-A80F-4A41-A86F-27A277C5DD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDC06E9-56B6-4649-AD79-189DC6864741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDC06E9-56B6-4649-AD79-189DC6864741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDC06E9-56B6-4649-AD79-189DC6864741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDC06E9-56B6-4649-AD79-189DC6864741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1699867-7A61-41CF-A715-D2947E75F967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1699867-7A61-41CF-A715-D2947E75F967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1699867-7A61-41CF-A715-D2947E75F967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1699867-7A61-41CF-A715-D2947E75F967}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{631C6EFC-D64B-49E6-8F55-238724AE1E8E} = {E18248C4-8DCC-4835-9F6F-88855579718E}
+		{70E8E7FF-A80F-4A41-A86F-27A277C5DD65} = {631C6EFC-D64B-49E6-8F55-238724AE1E8E}
+		{9DD1EFB0-47AF-4243-9BA4-67F30570DFD3} = {631C6EFC-D64B-49E6-8F55-238724AE1E8E}
+		{4FDC06E9-56B6-4649-AD79-189DC6864741} = {631C6EFC-D64B-49E6-8F55-238724AE1E8E}
+		{A1699867-7A61-41CF-A715-D2947E75F967} = {631C6EFC-D64B-49E6-8F55-238724AE1E8E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28384062-A3CE-415D-A6CA-E04DD532D636}
+	EndGlobalSection
+EndGlobal
