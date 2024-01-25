@@ -20,8 +20,7 @@ public class MedicoService : IMedicoService
       });
 
   }
-
-  public void Delete(int id)
+    public void Delete(int id)
   {
     _context.MedicosCollection.Delete(id);
   }
@@ -45,7 +44,7 @@ public class MedicoService : IMedicoService
   public MedicoViewModel? GetById(int id)
   {
     var medico = _context.MedicosCollection.GetById(id);
-    
+
     if(medico is null)
       return null;
 

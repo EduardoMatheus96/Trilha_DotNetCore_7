@@ -45,7 +45,7 @@ public class PacienteService : IPacienteService
     public PacienteViewModel? GetById(int id)
     {
         var paciente = _context.PacientesCollection.GetById(id);
-        
+
         if(paciente is null)
         return null;
 

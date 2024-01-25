@@ -33,7 +33,7 @@ public class MedicoController : ControllerBase
    {
       _medicoService.Create(medico);
       return CreatedAtAction(nameof(Get), medico);
- 
+
    }
 
    [HttpPut("medico/{id}")]

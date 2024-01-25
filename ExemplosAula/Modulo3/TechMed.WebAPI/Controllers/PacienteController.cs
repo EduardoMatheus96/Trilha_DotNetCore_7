@@ -14,9 +14,6 @@ public class PacienteController : ControllerBase
    private readonly IPacienteService _pacienteService;
    public List<PacienteViewModel> Pacientes => _pacienteService.GetAll().ToList();
    public PacienteController(IPacienteService service) => _pacienteService = service;
-   // private readonly IPacienteCollection _pacientes;
-   // public List<Paciente> Pacientes => _pacientes.GetAll().ToList();
-   // public PacienteController(ITechMedContext context) => _pacientes = context.PacientesCollection;
 
    [HttpGet("pacientes")]
    public IActionResult Get()
@@ -40,7 +37,7 @@ public class PacienteController : ControllerBase
 
       //service.Create(paciente);
       return CreatedAtAction(nameof(Get), paciente);
- 
+
    }
 
    [HttpPut("paciente/{id}")]
