@@ -3,6 +3,7 @@ using TechMed.Application.Services;
 using TechMed.Application.Services.Interfaces;
 using TechMed.Infrastructure.Persistence;
 using TechMed.Infrastructure.Persistence.Interfaces;
+using TechMed.WebAPI.Application.Services.Auth;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,7 @@ builder.Services.AddDbContext<TechMedDbContext>(options => {
 
     var serverVersion = ServerVersion.AutoDetect(connectionString);
 
-      options.UseMySql(connectionString, serverVersion);
+    options.UseMySql(connectionString, serverVersion);
 });
 
 builder.Services.AddControllers();
@@ -33,6 +34,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseMiddleware<SimpleAuthHendler>();
 }
 
 app.UseHttpsRedirection();
