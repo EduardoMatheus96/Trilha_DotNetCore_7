@@ -7,7 +7,9 @@ namespace TechMed.WebAPI.Controllers;
 [Route("/api/v0.1/")]
 public class LoginController : ControllerBase
 {
+    [HttpPost]
     public IActionResult Login([FromBody] LoginInputModel user){
+        
         throw new NotImplementedException();
     }
 }
