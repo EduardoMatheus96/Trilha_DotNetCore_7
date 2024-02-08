@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TechMed.Application.InputModels;
+using TechMed.Application.Services.Interfaces;
 
 namespace TechMed.WebAPI.Controllers;
 
@@ -7,9 +8,21 @@ namespace TechMed.WebAPI.Controllers;
 [Route("/api/v0.1/")]
 public class LoginController : ControllerBase
 {
-    [HttpPost]
-    public IActionResult Login([FromBody] LoginInputModel user){
-        
-        throw new NotImplementedException();
+    private readonly ILoginService _loginService;
+
+    public LoginController(ILoginService loginService)
+    {
+        _loginService = loginService;
+    }
+
+    [HttpPost("login")]
+    public IActionResult Login([FromBody] LoginInputModel user)
+    {
+        var userViewModel = _loginService.Authenticate(user);
+        if (userViewModel is not null)
+        {
+            return Ok(userViewModel);
+        }
+        return Unauthorized();
     }
 }
