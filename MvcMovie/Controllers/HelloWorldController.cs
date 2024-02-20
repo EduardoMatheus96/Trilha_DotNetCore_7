@@ -4,13 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 namespace MvcMovie.Controllers;
 public class HelloWorldController : Controller
 {
-    public IActionResult Index(){
+    public IActionResult Index()
+    {
         return View();
     }
 
-    public string Welcome(string name, int numTimes = 1)
+    public IActionResult Welcome(string name, int numTimes = 1)
     {
-        return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
-        // return "This is the Welcome action method...";
+        ViewData["Message"] = "Hello " + name;
+        ViewData["NumTimes"] = numTimes;
+        return View();
     }
 }
